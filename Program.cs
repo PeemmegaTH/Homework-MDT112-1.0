@@ -6,8 +6,8 @@ namespace Homework {
             Console.Write("Enter the password 6 digit :");
             int password = int.Parse(Console.ReadLine());
 
-            if (password >= 1000000) {
-                Console.Write("too much digit!!");
+            if (password >= 1000000 || password < 0) {
+                Console.Write("Error");
                 return;
             }
 
@@ -28,12 +28,12 @@ namespace Homework {
 
                 /*[[
                 -----------------------------------------------------------------------
-                    Console.WriteLine("hundreds_of_thousands: "+hundreds_of_thousands);
-                    Console.WriteLine("tens_of_thousands: "+tens_of_thousands);
-                    Console.WriteLine("thousands: "+thousands);
-                    Console.WriteLine("hundreds: "+hundreds);
-                    Console.WriteLine("tens: "+tens);
-                    Console.WriteLine("unit: "+unit);
+                Console.WriteLine("hundreds_of_thousands: "+hundreds_of_thousands);
+                Console.WriteLine("tens_of_thousands: "+tens_of_thousands);
+                Console.WriteLine("thousands: "+thousands);
+                Console.WriteLine("hundreds: "+hundreds);
+                Console.WriteLine("tens: "+tens);
+                Console.WriteLine("unit: "+unit);
                 -----------------------------------------------------------------------
                 ]]*/
 
