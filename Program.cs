@@ -42,7 +42,7 @@ namespace Homework {
                 case ("CIA"):
                 bool cia_condition1 = unit % 3 == 0;
                 bool cia_condition2 = (tens != 1 && tens != 3 && tens != 5);
-                bool cia_condition3 = (thousands >= 6 && thousands < 8);
+                bool cia_condition3 = (thousands >= 6 && thousands != 8);
                 if (cia_condition1 && cia_condition2 && cia_condition3){
                     surcess = true;
                 }
